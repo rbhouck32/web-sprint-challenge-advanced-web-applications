@@ -27,6 +27,9 @@ const BubblePage = () => {
       .then((res) => {
         console.log(res.data);
         setColorList(res.data);
+      })
+      .catch((err) => {
+        console.error("fail hard", err.message);
       });
   }, []);
 
