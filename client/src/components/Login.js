@@ -32,17 +32,17 @@ const Login = (props) => {
         console.error("rh: login failed: err:", err.message);
         localStorage.removeItem("authToken");
       });
-    // axiosWithAuth()
-    //   .post("/login", credentials)
-    //   .then((res) => {
-    //     console.log("rh: login success: res: ", res);
-    //     localStorage.setItem("authToken", res.data.payload);
-    //     props.history.push("/protected");
-    //   })
-    //   .catch((err) => {
-    //     console.error("rh: login failed: err ", err.message);
-    //     localStorage.removeItem("authToken");
-    //   });
+    //   axiosWithAuth()
+    //     .post("/api/login", credentials)
+    //     .then((res) => {
+    //       console.log("rh: login success: res: ", res);
+    //       localStorage.setItem("authToken", res.data.payload);
+    //       props.history.push("/protected");
+    //     })
+    //     .catch((err) => {
+    //       console.error("rh: login failed: err ", err.message);
+    //       localStorage.removeItem("authToken");
+    //     });
   };
 
   return (
